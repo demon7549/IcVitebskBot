@@ -5,7 +5,7 @@ bot = telebot.TeleBot("1252421121:AAG972Btaskdu3hb2qPvd8EIM6vpvha2HsU")
 @bot.message_handler(content_types=['text'])
 def handle_text_messages(message):
       if message.text == "Привет":
-          bot.send_message(message.from_user.id, "Привет")
+          bot.send_message(message.from_user.id, "Привет!")
       elif message.text == "Кто ты?":
           bot.send_message(message.from_user.id, "Я тестовый чатбот для учебного примера.")
       elif message.text == "Как тебя зовут?":
